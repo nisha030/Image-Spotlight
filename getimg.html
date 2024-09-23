@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: radial-gradient(circle,peachpuff,lavender,plum);
+        }
+        .maincontainer{
+			width: 500px;
+			height: 400px;
+			margin: 0 auto;
+            border: 6px solid plum;
+		}
+		.container{
+			width: 200px;
+			height: 200px;
+		}
+		.store{
+			display: flex;
+			justify-content: space-between;
+			margin-top: 100px;
+			flex-direction: row;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+        /* .bdr{
+            border: 4px solid teal;
+        } */
+        /* #img-1{
+            position: absolute;
+            top: 10px;
+            left: 30%;
+            width: 500px;
+            height: 500px;
+            border: 2px solid teal;
+        }
+        #img-2{
+            position: absolute;
+            top: 600px;
+            left: 5%;
+            width: 200px;
+            height: 200px;
+            border: 2px solid cadetblue;
+        }
+        #img-3{
+            position: absolute;
+            top: 600px;
+            left: 22%;
+            width: 200px;
+            height: 200px;
+            border: 2px solid hotpink;
+        }
+        #img-4{
+            position: absolute;
+            top: 600px;
+            left: 40%;
+            width: 200px;
+            height: 200px;
+            border: 2px solid lightseagreen;
+        }
+        #img-5{
+            position: absolute;
+            top: 600px;
+            left: 60%;
+            width: 200px;
+            height: 200px;
+            border: 2px solid turquoise;
+        }
+        #img-6{
+            position: absolute;
+            top: 600px;
+            right: 10%;
+            width: 200px;
+            height: 200px;
+            border: 2px solid springgreen;
+        } */
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+		<img class="mainimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5QP6Iff822-i9Ev80VNWPdKC3LJuh7zASg&usqp=CAU">
+	</div>
+	<div class="store">
+	<div class="container">
+		<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5QP6Iff822-i9Ev80VNWPdKC3LJuh7zASg&usqp=CAU">
+	</div>
+	<div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRFAxtSpjVvEI2R6VKO9uAHUtCdtYQ-eC3A&usqp=CAU" alt="" class="image">
+	</div>
+	<div class="container">
+		<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9P5n6w6uWVhPZgYNLq2xnyCV4JgWshVEdQQ&usqp=CAU">
+	</div>
+	<div class="container">
+		<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNxcl3esEF51JnHYU5K3khZiOERGdkRyj0sg&usqp=CAU">
+	</div>
+	<div class="container">
+		<img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKYb3Fd7-Ng1ia4OH9G-bpQy-qyUBfGYILbA&usqp=CAU">
+	</div>
+    <!-- <div class="bdr"></div>
+    <div class="rembdr"></div> -->
+	</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script type="text/javascript">
+     $(".image").click(function() {
+         let newimg = $(this).attr("src")
+          $(".mainimg").attr("src",newimg)
+     })
+     $(".image").click(function(){
+        $(".image").css("border","5px transparent")
+        $(this).css("border"," 5px solid teal")
+    //    let bdrimg= $(this).addClass("bdr")
+     })
+ </script>
+ <script>
+    //     $('#container-2').click(()=>{
+    //   $('#img-1').attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg5QP6Iff822-i9Ev80VNWPdKC3LJuh7zASg&usqp=CAU");
+    // })
+    // $('#container-3').click(()=>{
+    //   $('#img-1').attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWRFAxtSpjVvEI2R6VKO9uAHUtCdtYQ-eC3A&usqp=CAU");
+    // })
+    // $('#container-4').click(()=>{
+    //   $('#img-1').attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9P5n6w6uWVhPZgYNLq2xnyCV4JgWshVEdQQ&usqp=CAU");
+    // })
+    // $('#container-5').click(()=>{
+    //   $('#img-1').attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNxcl3esEF51JnHYU5K3khZiOERGdkRyj0sg&usqp=CAU");
+    // })
+    // $('#container-6').click(()=>{
+    //   $('#img-1').attr("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKYb3Fd7-Ng1ia4OH9G-bpQy-qyUBfGYILbA&usqp=CAU");
+    // })
+   
+        
+ </script>
+</body>
+</html>
